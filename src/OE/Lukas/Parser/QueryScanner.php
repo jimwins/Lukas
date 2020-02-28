@@ -188,7 +188,7 @@ class QueryScanner
         // characters, and ppoints (e.g. dibe_relict.101)
         // Cannot match with cut-off characters and accents,
         // those will need to be placed within quotes
-        self::WORD => '#^([\p{L}\p{N}_][\p{L}\p{N}_\-.%/]*)(.*)#u',
+        self::WORD => '!^([\p{L}\p{N}_#][\p{L}\p{N}_\-.%/#]*)(.*)!u',
 
         // parentheses (left and right)
         self::LPAREN => '#^(\()(.*)#',
